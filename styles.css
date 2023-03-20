@@ -14,6 +14,11 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
+a {
+    color: #FFFFFF;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -48,6 +53,19 @@ h2 {
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
     margin-bottom: 0rem;
+}
+
+.creditContainer {
+    align-items: stretch !important;
+}
+
+.creditContainerMargin{
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.marginZero{
+    margin: 0rem !important;
 }
 
 .interiorContainer {

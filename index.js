@@ -1,6 +1,12 @@
 function routeSuggestion (value) {
     var routeSuggested = document.getElementById("searchContainerID").value;
-    console.log("joe" + routeSuggested);
+    let routeSuggestedResult = [];
+    if(routeSuggested.length){
+        routeSuggestedResult = routesConst.filter((keyword)=>{
+            return keyword.includes(routeSuggested.toLowerCase())
+        });
+        console.log(routeSuggestedResult);
+    }
 }
 
 function routeFinder (value) {
