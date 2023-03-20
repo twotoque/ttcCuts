@@ -1,0 +1,118 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #C71C21;
+    color: #FFFFFF;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight:900;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.routeName{
+    font-size:3rem;
+}
+
+.searchContainer{
+    
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    outline: #FFFFFF;
+    padding: 1rem;
+    height: 3rem;
+    width: 50vw;
+    text-align: left;
+    border: 0;
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+.noCuts {
+    text-align: center;
+}
+.searchSuggestion{
+    margin-top: 0rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    margin-bottom: 0rem;
+}
+
+.interiorContainer {
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #C71C21;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.interiorContainerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.interiorContainerElement{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 0.93;
+}
+
+.interiorContainerTitle {
+    margin-bottom: .2rem;
+}
+.interiorContaineTitleTime{
+    margin: 0rem;
+}
+.masterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 100px);  
+    grid-template-rows: repeat(2, 50px);  
+
+}
+
+.footerLogos{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    justify-content: center;
+    
+}
+.footer{
+    padding-top: 5rem;
+    text-align: center;
+}
+.containerRouteMaster {          
+    display: grid;  
+    align-items: center;
+    grid-gap: 5px;  
+    grid-template-rows: repeat(5, auto-fit);  
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.TTCridersFooterLogo{
+    margin-right:50px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .containerRouteMaster {  
+        grid-template-columns: repeat(auto-fit, 33%);
+    }
+}

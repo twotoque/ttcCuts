@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+        <h1>Is your TTC route getting cut?</h1>
+      </div>
+      <div class="container">
+        <form>
+            <div>
+               <input class="searchContainer"  onkeydown="return (event.keyCode!=13);" onkeyup="routeSuggestion(this.value); routeFinder(this.value)" id ="searchContainerID" placeholder="Enter a route"></input>
+               <ul class="searchContainer searchSuggestion">Test</ul>
+               <ul class="searchContainer searchSuggestion">Test</ul>
+               <ul class="searchContainer searchSuggestion">Test</ul>
+               <ul class="searchContainer searchSuggestion">Test</ul>
+            </div>
+        </form>
+       </div>
+       <div class="container">
+        <form>
+            <h2 class="routeName" id="routeNameHTML"></h2>
+           </form>
+       </div>
+       <div class="containerRouteMaster" id="containerRouteMaster"> 
+
+        <div class="container"  id="earlyMorning">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Early morning</h2> 
+                <h3 class="interiorContaineTitleTime"> 6AM-8AM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEM"></b>
+                        <p id = "MFincreaseEM"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEM"></b>
+                        <p id = "SincreaseEM"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEM"></b>
+                        <p id = "SHincreaseEM"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container" id="morningPeak">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Morning peak </h2> 
+                <h3 class="interiorContaineTitleTime"> 8AM - 10AM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEP"></b>
+                        <p id = "MFincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEP"></b>
+                        <p id = "SincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEP"></b>
+                        <p id = "SHincreaseEP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="lateMorning">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Late morning</h2> 
+                <h3 class="interiorContaineTitleTime"> 10AM - 12PM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqLM"></b>
+                        <p id = "MFincreaseLM"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqLM"></b>
+                        <p id = "SincreaseLM"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqLM"></b>
+                        <p id = "SHincreaseLM"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="container" id="earlyAfternoon">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Early afteroon</h2> 
+                <h3 class="interiorContaineTitleTime"> 12PM - 3PM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEA"></b>
+                        <p id = "MFincreaseEA"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEA"></b>
+                        <p id = "SincreaseEA"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEA"></b>
+                        <p id = "SHincreaseEA"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container"  id="afternoonPeak">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Afternoon peak</h2> 
+                <h3 class="interiorContaineTitleTime"> 3PM - 7PM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEP"></b>
+                        <p id = "MFincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEA"></b>
+                        <p id = "SincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEP"></b>
+                        <p id = "SHincreaseEP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container" id="earlyEvening">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Early evening</h2> 
+                <h3 class="interiorContaineTitleTime"> 7PM - 10PM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEP"></b>
+                        <p id = "MFincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEA"></b>
+                        <p id = "SincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEP"></b>
+                        <p id = "SHincreaseEP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="lateEvening">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Late evening</h2> 
+                <h3 class="interiorContaineTitleTime"> 10PM - 1AM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEP"></b>
+                        <p id = "MFincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEA"></b>
+                        <p id = "SincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEP"></b>
+                        <p id = "SHincreaseEP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="overnight">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Overnight</h2> 
+                <h3 class="interiorContaineTitleTime"> 1AM-6AM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEP"></b>
+                        <p id = "MFincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEA"></b>
+                        <p id = "SincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEP"></b>
+                        <p id = "SHincreaseEP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="midday">
+            <div class="interiorContainer">
+                <h2 class="interiorContainerTitle">Midday</h2> 
+                <h3 class="interiorContaineTitleTime"> 1AM-6AM</h3>
+                <div class="interiorContainerFlex">
+                    <div class="interiorContainerElement">
+                        <h3>Monday to Friday</h3> 
+                        <b id = "MFfreqEP"></b>
+                        <p id = "MFincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Saturday</h3>
+                        <b id = "SfreqEA"></b>
+                        <p id = "SincreaseEP"></p>
+                    </div>
+                    <div class="interiorContainerElement">
+                        <h3>Sundays / Holidays</h3>
+                        <b id = "SHfreqEP"></b>
+                        <p id = "SHincreaseEP"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      </div>
+      <div class="noCuts" id="noCuts">
+        <h2> Your route is not affected by the upcoming TTC cuts.</h1>
+        <p> The frequency you experience right now will stay the same. As this tool is in beta, we aim to add the frequencies of all routes irregardless of it being cut or not in the future. Stay tuned! </p>
+      </div>
+      
+      <p id="notes"></p>
+        </form>
+       </div>
+        
+       <div class="footer">
+            <div class="footerLogos">
+                <img class="TTCridersFooterLogo" src="https://cdn.nationbuilderthemes.ca/ttcridersto/pages/1443/attachments/original/1639339422/logo-hover.svg?1639339422" height=50vw;></img>  
+                <img  src="https://twotoque.com/img/LogoWhite.svg" height=50vw;></img>  
+            </div>
+            <p> This project was made by Derek Song (twotoque) in collaboration with TTCriders. This project uses data from Steve Munro and the Toronto Transit Commission. Made with ❤️ from Toronto.</p>
+        </div>
+    </div>
+        <script src="routes.js"></script>
+        <script src="index.js"></script>
+  </body>
+</html>
