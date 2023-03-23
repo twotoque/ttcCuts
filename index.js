@@ -1,14 +1,3 @@
-function routeSuggestion (value) {
-    var routeSuggested = document.getElementById("searchContainerID").value;
-    let routeSuggestedResult = [];
-    if(routeSuggested.length){
-        routeSuggestedResult = routesConst.filter((keyword)=>{
-            return keyword.includes(routeSuggested.toLowerCase())
-        });
-        console.log(routeSuggestedResult);
-    }
-}
-
 function routeFinder (value) {
     // Searches HTML document for ID containing "searchContainerID". Gets it's value
     var routeSelectedCapitalize = document.getElementById("searchContainerID").value;
@@ -74,9 +63,14 @@ window.onload = function() {
     } else {
         document.getElementById('noCuts').style.display = 'none';
     }
-
-
-
-
-
 }
+searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value;
+    const results = searchArrayByName(searchTerm, myArray);
+    resultsList.innerHTML = '';
+    for (let i = 0; i < results.length; i++) {
+      const li = document.createElement('li');
+      li.textContent = results[i].name;
+      resultsList.appendChild(li);
+    }
+  });

@@ -47,6 +47,7 @@ a {
 
 .noCuts {
     text-align: center;
+    margin: 4rem;
 }
 .searchSuggestion{
     margin-top: 0rem;
@@ -74,6 +75,26 @@ a {
     color: #C71C21;
     border-radius: 1rem;
     width: 100%;
+}
+
+
+.topContainer {
+    text-align: left;
+    background-color: #212121;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: start;
+    padding-left: 2rem;
+}
+
+
+.topContainerBeta {
+    background-color: #6300E5 !important;
+    margin-bottom: 1rem;
 }
 
 .interiorContainerFlex{
@@ -123,6 +144,25 @@ a {
     margin-top: 4rem;
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+a.button1{ 
+    border-radius: 1rem;
+    background-color: #C71C21;
+    border: 0.1em solid #FFFFFF;
+    padding: 0.35em 1.2em;
+    text-decoration:none;
+    font-size: 1.5rem;
+    margin: 3rem;
+    font-weight: 700;
+}
+
+a.button1:hover{ 
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    border: 0.1em solid #C71C21;
+    color: #C71C21;
+    font-weight: 700;
 }
 
 .TTCridersFooterLogo{

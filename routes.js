@@ -4,6 +4,7 @@ const routesConst = [
         searchNum: "36 finch west",
         name: "36 Finch West",
         cuts: "yes",
+        f: 3,
 
     // ---- MORNING ----
 
@@ -95,5 +96,14 @@ const routesConst = [
         search: "39 finch east",
         name: "39 Finch East",
         cuts: "no",
+        f: 3,
+    },
+    {
+        search: "34",
+        f: 34,
+    },
+    {
+        search: "51",
+        f: 5,
     }
 ];

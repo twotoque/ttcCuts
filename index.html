@@ -6,21 +6,26 @@
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <script src="routes.js"></script>
+    <script src="index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
       <div class="container">
-        <h1>Is your TTC route getting cut?</h1>
+        <h1>Is your TTC route getting cut?</h1> 
       </div>
+    <div class="container topContainerBeta topContainer">
+        <h3> This website is in beta and some features are a work in progress. Thank you for your cooperation!</h3>
+    </div>
+    <div class="container topContainer">
+        <h3> Toronto City Council is voting soon on the 2023 budget. <br> Tell your Councillor to fund lower fares and improved TTC service!</h3>
+    </div>
       <div class="container">
         <form>
             <div>
-               <input class="searchContainer"  onkeydown="return (event.keyCode!=13);" onkeyup="routeSuggestion(this.value); routeFinder(this.value)" id ="searchContainerID" placeholder="Enter a route"></input>
-               <ul class="searchContainer searchSuggestion">Test</ul>
-               <ul class="searchContainer searchSuggestion">Test</ul>
-               <ul class="searchContainer searchSuggestion">Test</ul>
-               <ul class="searchContainer searchSuggestion">Test</ul>
+               <input class="searchContainer"  onkeydown="return (event.keyCode!=13);" onkeyup="searchArray(this.value); routeFinder(this.value)" id ="searchContainerID" placeholder="Enter a route"></input>
+               <!-- [To be added later] <ul class="searchContainer searchSuggestion">Test</ul>-->
             </div>
         </form>
        </div>
@@ -250,11 +255,34 @@
         </div>
     
       </div>
-      <div class="noCuts" id="noCuts">
-        <h2> Your route is not affected by the upcoming TTC cuts.</h1>
+      <div class="noCuts" id="">
+        <h2> Your route is not affected by the upcoming TTC cuts.</h2>
         <p> The frequency you experience right now will stay the same. As this tool is in beta, we aim to add the frequencies of all routes irregardless of it being cut or not in the future. Stay tuned! </p>
       </div>
-      
+      <div class="noCuts" id="SRT">
+        <img src="https://cdn.nationbuilderthemes.ca/ttcridersto/tr:w-1400,ar-7-3,q-85/pages/2173/meta_images/original/Keep_Scarborough_Connected_-_Social_Shareables_20220201.jpg?1643748536"></img>
+        <h2> Though Line 3 Scarborough is not affected by the upcoming TTC cuts, it is bound to be closed in late 2023.</h2>
+        <p> Line 3 Scarborough has been the backbone for transit in the east end for over 37 years, and despite the lack of rapid transit in the nearby area, it is set to close in less than a few months. Though the TTC is extending Line 2 Bloor-Danforth to Sheppard East, this extension will not be open until 2030. This will force 35,000 daily SRT riders on shuttle buses. </p>
+        <p> Over the past few years, TTCriders advocated and eventually succeeded in a rapid bus lane to diminish the affects of the closure of the SRT. This rapidway will also include much needed green space for walking and cycling.</p>
+        <p><b>However, we still need much more transit in Scarborough.</b> Read our report and sign your name to help!</p>
+        <br>
+        <a href="https://www.ttcriders.ca/line3report" class="button1">Check out our report and recommendations!</a>
+        <h2>Other resources:</h2>
+        <a href="https://www.ttc.ca/about-the-ttc/projects-and-plans/Future-of-Line-3-Scarborough" class="button1">TTC's page about the decommissioning of the RT</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScApSsal_3Wl5qupbcN9q4RZNFaWF-7w0zpSFx_O70GQESSKg/viewform" class="button1">Fill in this survey in collaboration with students at Toronto Metropolitan University</a>
+      </div>
+      <div class="noCuts" id="rapidTO">
+        <img src="https://cdn.nationbuilderthemes.ca/ttcridersto/tr:w-1400,ar-7-3,q-85/pages/2173/meta_images/original/Keep_Scarborough_Connected_-_Social_Shareables_20220201.jpg?1643748536"></img>
+        <h2> Though Line 3 Scarborough is not affected by the upcoming TTC cuts, it is bound to be closed in late 2023.</h2>
+        <p> Line 3 Scarborough has been the backbone for transit in the east end for over 37 years, and despite the lack of rapid transit in the nearby area, it is set to close in less than a few months. Though the TTC is extending Line 2 Bloor-Danforth to Sheppard East, this extension will not be open until 2030. This will force 35,000 daily SRT riders on shuttle buses. </p>
+        <p> Over the past few years, TTCriders advocated and eventually succeeded in a rapid bus lane to diminish the affects of the closure of the SRT. This rapidway will also include much needed green space for walking and cycling.</p>
+        <p><b>However, we still need much more transit in Scarborough.</b> Read our report and sign your name to help!</p>
+        <br>
+        <a href="https://www.ttcriders.ca/line3report" class="button1">Check out our report and recommendations!</a>
+        <h2>Other resources:</h2>
+        <a href="https://www.ttc.ca/about-the-ttc/projects-and-plans/Future-of-Line-3-Scarborough" class="button1">TTC's page about the decommissioning of the RT</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScApSsal_3Wl5qupbcN9q4RZNFaWF-7w0zpSFx_O70GQESSKg/viewform" class="button1">Fill in this survey in collaboration with students at Toronto Metropolitan University</a>
+      </div>
       <p id="notes"></p>
         </form>
        </div>
@@ -267,7 +295,5 @@
             <p> This project was made by Derek Song (twotoque) in collaboration with TTCriders. This project uses data from Steve Munro and the Toronto Transit Commission. Made with ❤️ from Toronto.</p>
         </div>
     </div>
-        <script src="routes.js"></script>
-        <script src="index.js"></script>
   </body>
 </html>
