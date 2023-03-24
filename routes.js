@@ -10,7 +10,7 @@ const routesConst = [
 
     //Early Morning
         MFfreqEM: "5 minutes, 30 seconds",
-        MFincreaseEM: "~0 minute, 45 seconds",
+        MFincreaseEM: "~+0 minute, 45 seconds",
         SfreqEM: "+1 minute, 0 seconds",
         SincreaseEM: "+1 minute, 0 seconds",
         SHfreqEM: "+1 minute, 0 seconds",
@@ -18,7 +18,7 @@ const routesConst = [
 
     //Morning Peak
         MFfreqEP: "5 minutes, 30 seconds",
-        MFincreaseEP: "~0 minute, 45 seconds",
+        MFincreaseEP: "~+0 minute, 45 seconds",
         SfreqEP: "+1 minute, 0 seconds",
         SincreaseEP: "+1 minute, 0 seconds",
         SHfreqEP: "+1 minute, 0 seconds",
@@ -82,12 +82,12 @@ const routesConst = [
 
         
     //Overnight
-        MFfreqMD: "~6 minutes, 15 seconds",
-        MFincreaseMD: "~+0 minutes, 30 seconds",
-        SfreqMD: "+1 minute, 0 seconds",
-        SincreaseMD: "+1 minute, 0 seconds",
-        SHfreqMD: "+1 minute, 0 seconds",
-        SHincreaseMD: "+1 minute, 0 seconds",
+        MFfreqON: "~6 minutes, 15 seconds",
+        MFincreaseON: "~+0 minutes, 30 seconds",
+        SfreqON: "+1 minute, 0 seconds",
+        SincreaseON: "+1 minute, 0 seconds",
+        SHfreqON: "+1 minute, 0 seconds",
+        SHincreaseON: "+1 minute, 0 seconds",
 
     //Notes
         notes: "Some cuts (speicifcally Monday-Friday at morning peak, midday, afternoon peak, early evening, and Sunday/Holiday morning and afternoon are dependent on if the bus is east or west of Finch West station. The specific times are as follows: 5minutes 30 seconds east of Finch West",
