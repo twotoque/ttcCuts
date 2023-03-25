@@ -5,7 +5,13 @@ function routeFinder (value) {
 
     // This function basically searches for the value of the routeSelected to the array "routesConst"
     function routesConstFinder (routesConst) {
-        return routesConst.search === routeSelected;
+        
+        if (routesConst.search === routeSelected) {
+            return routesConst.search === routeSelected;
+        } else {
+            return routesConst.searchNum === routeSelected;
+        }
+        
     }
     
     // Assigns data found in above fucntion to variables
@@ -75,6 +81,7 @@ function routeFinder (value) {
 
     let routeNotes= routesConst.find(routesConstFinder).notes;
     let cuts= routesConst.find(routesConstFinder).cuts;
+    let rapidTO= routesConst.find(routesConstFinder).rapidTO;
 
     // Replaces body text with updated data
     document.getElementById("routeNameHTML").innerHTML = routeName;
@@ -138,12 +145,11 @@ function routeFinder (value) {
     
 
     // Checks if the values are fulfilled to show intended time bubble
+
     if (MFfreqEM == null || MFincreaseEM == null) {
         document.getElementById('earlyMorning').style.display = 'none';
-        console.log("true");
     } else {
         document.getElementById('earlyMorning').style.display = '';
-        console.log("false");
     }
 
     if (MFfreqEP == null || MFincreaseEP == null) {
@@ -151,8 +157,14 @@ function routeFinder (value) {
     } else {
         document.getElementById('morningPeak').style.display = '';
     }
+
+    if (MFfreqEA == null || MFincreaseEA == null) {
+        document.getElementById('earlyAfternoon').style.display = 'none';
+    } else {
+        document.getElementById('earlyAfternoon').style.display = '';
+    }
     
-    if (MFfreqEP == null || MFincreaseEP == null) {
+    if (MFfreqAP == null || MFincreaseAP == null) {
         document.getElementById('afternoonPeak').style.display = 'none';
     } else {
         document.getElementById('afternoonPeak').style.display = '';
@@ -187,21 +199,35 @@ function routeFinder (value) {
     } else {
         document.getElementById('noCuts').style.display = 'none';
     }
-    
 
+    if (cuts == "line3") {
+        document.getElementById('SRT').style.display = '';
+    } else {
+        document.getElementById('SRT').style.display = 'none';
+    }
+
+    if (rapidTO == "yes") {
+        document.getElementById('rapidTO').style.display = '';
+    } else {
+        document.getElementById('rapidTO').style.display = 'none';
+    }
+    
+    if (routeNotes == null) {
+        document.getElementById('notes').style.display = 'none';
+    } else {
+        document.getElementById('notes').style.display = '';
+    }
 
 }
 
 
 // Function to hide bubble elements if no value is selected
 window.onload = function() {
-    var MFfreqEM, MFincreaseEM, MFfreqEP, MFincreaseEP, MFfreqLM, MFincreaseLM, MFfreqEP, MFincreaseEP, MFfreqEE, MFincreaseEE, MFfreqLE, MFincreaseLE, MFfreqON, MFincreaseON, MFfreqMD, MFincreaseMD, cuts  = null;
+    var MFfreqEM, MFincreaseEM, MFfreqEP, MFincreaseEP, MFfreqEA, MFincreaseEA,MFfreqAP, MFincreaseAP, MFfreqEP, MFincreaseEP, MFfreqEE, MFincreaseEE, MFfreqLE, MFincreaseLE, MFfreqON, MFincreaseON, MFfreqMD, MFincreaseMD, cuts, rapidTO, routeNotes  = null;
 
     if (MFfreqEM == null || MFincreaseEM == null) {
         document.getElementById('earlyMorning').style.display = 'none';
-        console.log("true");
     } else {
-        console.log("false");
         document.getElementById('earlyMorning').style.display = '';
     }
 
@@ -211,13 +237,13 @@ window.onload = function() {
         document.getElementById('morningPeak').style.display = '';
     }
 
-    if (MFfreqLM == null || MFincreaseLM == null) {
+    if (MFfreqEA == null || MFincreaseEA == null) {
         document.getElementById('earlyAfternoon').style.display = 'none';
     } else {
         document.getElementById('earlyAfternoon').style.display = '';
     }
     
-    if (MFfreqEP == null || MFincreaseEP == null) {
+    if (MFfreqAP == null || MFincreaseAP == null) {
         document.getElementById('afternoonPeak').style.display = 'none';
     } else {
         document.getElementById('afternoonPeak').style.display = '';
@@ -247,9 +273,28 @@ window.onload = function() {
         document.getElementById('midday').style.display = '';
     }
 
-    if (cuts == "no") {
-        document.getElementById('noCuts').style.display = '';
-    } else {
+    if (cuts == "no" || cuts == null) {
         document.getElementById('noCuts').style.display = 'none';
+    } else {
+        document.getElementById('noCuts').style.display = '';
     }
+
+    if (cuts == "line3"|| cuts == null) {
+        document.getElementById('SRT').style.display = 'none';
+    } else {
+        document.getElementById('SRT').style.display = '';
+    }
+    
+    if (rapidTO == "no"|| rapidTO == null) {
+        document.getElementById('rapidTO').style.display = 'none';
+    } else {
+        document.getElementById('rapidTO').style.display = '';
+    }
+
+    if (routeNotes == null) {
+        document.getElementById('notes').style.display = 'none';
+    } else {
+        document.getElementById('notes').style.display = '';
+    }
+
 }

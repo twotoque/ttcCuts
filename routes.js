@@ -1,10 +1,47 @@
 const routesConst = [
     {
+        search: "line 1 yonge-university",
+        searchNum: "1",
+        name: "Line 1 Yonge-University",
+        cuts: "no",
+        rapidTO: "no",
+    },
+    {
+        search: "line 3 scarborough",
+        searchNum: "3",
+        name: "Line 3 Scarborough",
+        cuts: "line3",
+        rapidTO: "no",
+    },
+    {
+        search: "35 jane",
+        searchNum: "35",
+        name: "35 Jane",
+        cuts: "yes",
+        rapidTO: "yes",
+        //Early Morning
+            MFfreqEM: "5 minutes, 30 seconds",
+            MFincreaseEM: "~+0 minute, 45 seconds",
+            SfreqEM: "+1 minute, 0 seconds",
+            SincreaseEM: "+1 minute, 0 seconds",
+            SHfreqEM: "+1 minute, 0 seconds",
+            SHincreaseEM: "+1 minute, 0 seconds",
+    
+        //Morning Peak
+            MFfreqEP: "5 minutes, 30 seconds",
+            MFincreaseEP: "~+0 minute, 45 seconds",
+            SfreqEP: "+1 minute, 0 seconds",
+            SincreaseEP: "+1 minute, 0 seconds",
+            SHfreqEP: "+1 minute, 0 seconds",
+            SHincreaseEP: "+1 minute, 0 seconds",
+    },
+    {
         search: "36 finch west",
-        searchNum: "36 finch west",
+        searchNum: "36",
         name: "36 Finch West",
         cuts: "yes",
-        f: 3,
+        rapidTO: "no",
+        
 
     // ---- MORNING ----
 
