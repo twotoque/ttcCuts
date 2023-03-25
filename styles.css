@@ -145,6 +145,17 @@ a {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+a.button2{
+    text-decoration: none;
+}
+
+.budgetContain:hover{
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color:#212121;
+}
+
+
 
 a.button1{ 
     border-radius: 1rem;
