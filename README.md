@@ -22,3 +22,21 @@ For this example, I will be doing the service changes for Line 2 Bloor-Danforth.
 
 Looking at the `routes.js` file, it might look very complicated at first! But don't worry, it's pretty simple. 
 
+## Route identification
+
+This system uses 2 identifications to find a route:
+* `search` is an **all lower case** full route name. (e.g. `39 Finch East` would be `39 finch east`. Ensuring that this is all lower caps is important or else inputting "39 FINCH EAST" at the HTML document will *not* work. For subway routes, use the common name, plus the word "Line" at the beginning (e.g. Line 2 would be `line 2 bloor-danforth`).
+* `searchNum` is just the route number. (e.g. `39 Finch East` would be `39`). For subway routes, use the line number (e.g. `Line 2 Bloor-Danforth` would be `2`).
+
+Moreover, `name` is the full route name with capitalization (e.g. `39 Finch East` would be `39 Finch East`).
+
+## Route parameters
+
+These are used to idetnify if a route is affected by the cuts or not. Additionally, the project also intergrates with various TTCriders campaigns- right now the decommissioning of Line 3 and RapidTO. 
+* `cuts` has three possible values:
+** `cuts = "no",` means that route is **not affected by the cuts**
+** `cuts = "yes",` means that route is **affected by the cuts**
+** `cuts = "line3",` applies the Line 3 decommissioning campaign to the route. **This should only be used for Line 3 Scarborough**
+* `rapidTO` has two possible values:
+** ``rapidTO: "no",`` means that this route is not being considered for RapidTO bus lanes
+** ``rapidTO: "yes",`` means that this route is being considered for RapidTO bus lanes
