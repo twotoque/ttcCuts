@@ -34,9 +34,9 @@ Moreover, `name` is the full route name with capitalization (e.g. `39 Finch East
 
 These are used to idetnify if a route is affected by the cuts or not. Additionally, the project also intergrates with various TTCriders campaigns- right now the decommissioning of Line 3 and RapidTO. 
 * `cuts` has three possible values:
-** `cuts = "no",` means that route is **not affected by the cuts**
-** `cuts = "yes",` means that route is **affected by the cuts**
-** `cuts = "line3",` applies the Line 3 decommissioning campaign to the route. **This should only be used for Line 3 Scarborough**
+   - `cuts = "no",` means that route is **not affected by the cuts**
+   - `cuts = "yes",` means that route is **affected by the cuts**
+   - `cuts = "line3",` applies the Line 3 decommissioning campaign to the route. **This should only be used for Line 3 Scarborough**
 * `rapidTO` has two possible values:
-** ``rapidTO: "no",`` means that this route is not being considered for RapidTO bus lanes
-** ``rapidTO: "yes",`` means that this route is being considered for RapidTO bus lanes
+   - ``rapidTO: "no",`` means that this route is not being considered for RapidTO bus lanes
+   - ``rapidTO: "yes",`` means that this route is being considered for RapidTO bus lanes
