@@ -40,3 +40,22 @@ These are used to idetnify if a route is affected by the cuts or not. Additional
 * `rapidTO` has two possible values:
    - ``rapidTO: "no",`` means that this route is not being considered for RapidTO bus lanes
    - ``rapidTO: "yes",`` means that this route is being considered for RapidTO bus lanes
+
+# Understanding the cut variable system
+
+The next few variables would include the information of the cuts. All of these variables use a common system: ``[DATE][freq/increase][TIME]``
+
+## Dates
+
+TTC divides its service schedules based on three days:
+
+* **Monday-Friday** would start with ``MF``
+* **Saturday** would start with ``S``
+* **Sunday/Holidays** would start with ``SH``
+
+## Freq/Increase
+
+This part depends on *what* the information is:
+
+* Frequency is how long are you going to wait for the train/bus/streetcar (e.g. 4 minutes, 35 seconds). The "middle" part would be `...freq...`
+* Increase is how how much time would you have to wait/save due to this change (e.g. +0 minutes, 51 seconds, -3 minutes, 23 seconds). The "middle" part would be `...increase...`
