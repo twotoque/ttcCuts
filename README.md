@@ -68,13 +68,14 @@ TTC divides its service schedules based on various times:
 * **Morning peak**, only on Mondays-Fridays from** 6AM-9AM** would end in ``MP`` (**M**orning **p**eak)
 * **Midday**, only on Mondays-Fridays from **9AM-3PM** would end in ``MD`` (**M**id**d**ay)
 * **Afternoon peak**, only on Mondays-Fridays from **3PM-7PM** would end in ``AP`` (**A**ternoon **p**eak)
+* **Early evening**, from **7PM-10PM** would end in ``EE`` (**E**arly **e**vening)
+* **Late evening**, from **10PM-1AM** would end in ``LE`` (**L**ate **e**vening)
+* **Overnight**, from **1:30AM-5:30AM** would end in ``ON`` (**O**ver**n**ight)
 
 ### Saturdays and Sundays/Holidays (starts with S or SH respectively) 
 * **Early morning**, only on Saturdays and Sundays/Holidays from** 6AM-8AM** would end in ``EM`` (**E**arly **m**orning)
 * **Morning**, only on Saturdays and Sundays/Holidays from **8AM-12PM** would end in ``MO`` (**Mo**rning)
 * **Afternoon**, only on Saturdays and Sundays/Holidays from **12PM-7PM** would end in ``AF`` (**Af**ternoon)
- 
-### All days
 * **Early evening**, from **7PM-10PM** would end in ``EE`` (**E**arly **e**vening)
 * **Late evening**, from **10PM-1AM** would end in ``LE`` (**L**ate **e**vening)
 * **Overnight**, from **1:30AM-5:30AM** would end in ``ON`` (**O**ver**n**ight)
