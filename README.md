@@ -65,7 +65,7 @@ This part depends on *what* the information is:
 TTC divides its service schedules based on various times:
 
 ### Mondays - Fridays (starts with MF)
-* **Morning peak**, only on Mondays-Fridays from** 6AM-9AM** would end in ``MP`` (**M**orning **p**eak)
+* **Morning peak**, only on Mondays-Fridays from **6AM-9AM** would end in ``MP`` (**M**orning **p**eak)
 * **Midday**, only on Mondays-Fridays from **9AM-3PM** would end in ``MD`` (**M**id**d**ay)
 * **Afternoon peak**, only on Mondays-Fridays from **3PM-7PM** would end in ``AP`` (**A**ternoon **p**eak)
 * **Early evening**, from **7PM-10PM** would end in ``EE`` (**E**arly **e**vening)
