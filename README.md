@@ -49,9 +49,9 @@ The next few variables would include the information of the cuts. All of these v
 
 TTC divides its service schedules based on three days:
 
-* **Monday-Friday** would start with ``MF``
-* **Saturday** would start with ``S``
-* **Sunday/Holidays** would start with ``SH``
+* **Monday-Friday** would start with ``MF`` (**M**onday - **F**riday)
+* **Saturday** would start with ``S`` (**S**aturday)
+* **Sunday/Holidays** would start with ``SH`` (**S**unday - **H**olidays)
 
 ## Freq/Increase
 
@@ -59,3 +59,24 @@ This part depends on *what* the information is:
 
 * Frequency is how long are you going to wait for the train/bus/streetcar (e.g. 4 minutes, 35 seconds). The "middle" part would be `...freq...`
 * Increase is how how much time would you have to wait/save due to this change (e.g. +0 minutes, 51 seconds, -3 minutes, 23 seconds). The "middle" part would be `...increase...`
+
+## Times
+
+TTC divides its service schedules based on various times:
+
+### Mondays - Fridays (starts with MF)
+* **Morning peak**, only on Mondays-Fridays from** 6AM-9AM** would end in ``MP`` (**M**orning **p**eak)
+* **Midday**, only on Mondays-Fridays from **9AM-3PM** would end in ``MD`` (**M**id**d**ay)
+* **Afternoon peak**, only on Mondays-Fridays from **3PM-7PM** would end in ``AP`` (**A**ternoon **p**eak)
+* **Early evening**, from **7PM-10PM** would end in ``EE`` (**E**arly **e**vening)
+* **Late evening**, from **10PM-1AM** would end in ``LE`` (**L**ate **e**vening)
+* **Overnight**, from **1:30AM-5:30AM** would end in ``ON`` (**O**ver**n**ight)
+
+### Saturdays and Sundays/Holidays (starts with S or SH respectively) 
+* **Early morning**, only on Saturdays and Sundays/Holidays from** 6AM-8AM** would end in ``EM`` (**E**arly **m**orning)
+* **Morning**, only on Saturdays and Sundays/Holidays from **8AM-12PM** would end in ``MO`` (**Mo**rning)
+* **Afternoon**, only on Saturdays and Sundays/Holidays from **12PM-7PM** would end in ``AF`` (**Af**ternoon)
+* **Early evening**, from **7PM-10PM** would end in ``EE`` (**E**arly **e**vening)
+* **Late evening**, from **10PM-1AM** would end in ``LE`` (**L**ate **e**vening)
+* **Overnight**, from **1:30AM-5:30AM** would end in ``ON`` (**O**ver**n**ight)
+
