@@ -80,3 +80,11 @@ TTC divides its service schedules based on various times:
 * **Late evening**, from **10PM-1AM** would end in ``LE`` (**L**ate **e**vening)
 * **Overnight**, from **1:30AM-5:30AM** would end in ``ON`` (**O**ver**n**ight)
 
+## Putting it all together
+
+Again, it should follow the template of ``[DATE][freq/increase][TIME]``. For example, a Monday-Friday frequency for Midday would have the following parameters:
+* Date of Monday-Friday, therefore it should start with ``MF..``
+* We want the frequency, therefore it should have ``..freq..`` in the middle
+* And we want the time to be midday, therefore it should end with ``..MD``
+
+**The final variable should be ``MFfreqMD``**.
