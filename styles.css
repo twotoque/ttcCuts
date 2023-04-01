@@ -7,6 +7,7 @@ body {
     background-color: #C71C21;
     color: #FFFFFF;
     margin: 0;
+    padding-bottom: 4rem;
 }
 
 .black{
@@ -68,6 +69,17 @@ a {
     flex-direction: column;
 }
 
+.actionText{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.noMarginBelow{
+    margin-bottom: 0 !important;
+}
+
 .routeName{
     font-size:3rem;
 }
@@ -87,6 +99,9 @@ a {
     color: #212121;
 }
 
+.noteMargin{
+    margin-top: 3rem;
+}
 .noCuts {
     text-align: center;
     margin: 4rem;
@@ -192,8 +207,11 @@ a {
     
 }
 .footer{
-    padding-top: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     text-align: center;
+    background-color: #212121;
+    color: #FFFFFF;
 }
 .text{
     margin: 2rem;
