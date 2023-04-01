@@ -14,9 +14,9 @@ We will be focusing on `routes.js`. **Volunteering to contribute to data entry d
 
 # Prerequisites and template
 
-I strongly recommend downloading an integrated development environment (i.e. a fancy-pants notepad) such as [Visual Studio Code](https://code.visualstudio.com/) or [Replit](https://replit.com/~). If you are using Replit, I recommend setting the language in JavaScript.
+I strongly recommend downloading an integrated development environment (i.e. a fancy-pants notepad) such as [Visual Studio Code](https://code.visualstudio.com/) or [Replit](https://replit.com/~). If you are using Replit, I recommend setting the language in JavaScript. Alternatively, a your built in notepad app works fine. I strongly recommend **against** using your phone to complete this task; feel free to use a tablet with keyboard, desktop, or laptop to do data entry. 
 
-I have also made a template for each route over [here](https://github.com/twotoque/ttcCuts/blob/main/TEMPLATE.md)
+I have also made a template for each route over [here](https://github.com/twotoque/ttcCuts/blob/main/TEMPLATE.md). 
 
 # How to data entry
 
