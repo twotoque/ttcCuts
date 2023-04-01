@@ -16,40 +16,30 @@ function routeFinder (value) {
     
     // Assigns data found in above fucntion to variables
     let routeName = routesConst.find(routesConstFinder).name;
-    let MFincreaseEM= routesConst.find(routesConstFinder).MFincreaseEM;
-    let MFfreqEM= routesConst.find(routesConstFinder).MFfreqEM;
+
     let SincreaseEM= routesConst.find(routesConstFinder).SincreaseEM;
     let SfreqEM= routesConst.find(routesConstFinder).SfreqEM;
     let SHincreaseEM= routesConst.find(routesConstFinder).SHincreaseEM;
     let SHfreqEM= routesConst.find(routesConstFinder).SHfreqEM;
 
-    let MFincreaseEP= routesConst.find(routesConstFinder).MFincreaseEP;
-    let MFfreqEP= routesConst.find(routesConstFinder).MFfreqEP;
-    let SincreaseEP= routesConst.find(routesConstFinder).SincreaseEP;
-    let SfreqEP= routesConst.find(routesConstFinder).SfreqEP;
-    let SHincreaseEP= routesConst.find(routesConstFinder).SHincreaseEP;
-    let SHfreqEP= routesConst.find(routesConstFinder).SHfreqEP;
+    let MFincreaseMP= routesConst.find(routesConstFinder).MFincreaseMP;
+    let MFfreqMP= routesConst.find(routesConstFinder).MFfreqMP;
 
-    let MFincreaseLM= routesConst.find(routesConstFinder).MFincreaseLM;
-    let MFfreqLM= routesConst.find(routesConstFinder).MFfreqLM;
-    let SincreaseLM= routesConst.find(routesConstFinder).SincreaseLM;
-    let SfreqLM= routesConst.find(routesConstFinder).SfreqEP;
-    let SHincreaseLM= routesConst.find(routesConstFinder).SHincreaseLM;
-    let SHfreqLM= routesConst.find(routesConstFinder).SHfreqLM;
-
-    let MFincreaseEA= routesConst.find(routesConstFinder).MFincreaseEA;
-    let MFfreqEA= routesConst.find(routesConstFinder).MFfreqEA;
-    let SincreaseEA= routesConst.find(routesConstFinder).SincreaseEA;
-    let SfreqEA= routesConst.find(routesConstFinder).SfreqEA;
-    let SHincreaseEA= routesConst.find(routesConstFinder).SHincreaseEA;
-    let SHfreqEA= routesConst.find(routesConstFinder).SHfreqEA;
+    let SincreaseMO= routesConst.find(routesConstFinder).SincreaseMO;
+    let SfreqMO= routesConst.find(routesConstFinder).SfreqMO;
+    let SHincreaseMO= routesConst.find(routesConstFinder).SHincreaseMO;
+    let SHfreqMO= routesConst.find(routesConstFinder).SHfreqMO;
 
     let MFincreaseAP= routesConst.find(routesConstFinder).MFincreaseAP;
     let MFfreqAP= routesConst.find(routesConstFinder).MFfreqAP;
-    let SincreaseAP= routesConst.find(routesConstFinder).SincreaseAP;
-    let SfreqAP= routesConst.find(routesConstFinder).SfreqAP;
-    let SHincreaseAP= routesConst.find(routesConstFinder).SHincreaseAP;
-    let SHfreqAP= routesConst.find(routesConstFinder).SHfreqAP;
+
+    let SincreaseAF= routesConst.find(routesConstFinder).SincreaseAF;
+    let SfreqAF= routesConst.find(routesConstFinder).SfreqAF;
+    let SHincreaseAF= routesConst.find(routesConstFinder).SHincreaseAF;
+    let SHfreqAF= routesConst.find(routesConstFinder).SHfreqAF;
+
+    let MFincreaseMD= routesConst.find(routesConstFinder).MFincreaseMD;
+    let MFfreqMD= routesConst.find(routesConstFinder).MFfreqMD;
 
     let MFincreaseEE= routesConst.find(routesConstFinder).MFincreaseEE;
     let MFfreqEE= routesConst.find(routesConstFinder).MFfreqEE;
@@ -64,13 +54,6 @@ function routeFinder (value) {
     let SfreqLE= routesConst.find(routesConstFinder).SfreqLE;
     let SHincreaseLE= routesConst.find(routesConstFinder).SHincreaseLE;
     let SHfreqLE= routesConst.find(routesConstFinder).SHfreqLE;
-
-    let MFincreaseMD= routesConst.find(routesConstFinder).MFincreaseMD;
-    let MFfreqMD= routesConst.find(routesConstFinder).MFfreqMD;
-    let SincreaseMD= routesConst.find(routesConstFinder).SincreaseMD;
-    let SfreqMD= routesConst.find(routesConstFinder).SfreqMD;
-    let SHincreaseMD= routesConst.find(routesConstFinder).SHincreaseMD;
-    let SHfreqMD= routesConst.find(routesConstFinder).SHfreqMD;
     
     let MFincreaseON =routesConst.find(routesConstFinder).MFincreaseON;
     let MFfreqON= routesConst.find(routesConstFinder).MFfreqON;
@@ -85,33 +68,27 @@ function routeFinder (value) {
 
     // Replaces body text with updated data
     document.getElementById("routeNameHTML").innerHTML = routeName;
-    document.getElementById("MFfreqEM").innerHTML = "Every " + MFfreqEM;
-    document.getElementById("MFincreaseEM").innerHTML = MFincreaseEM;
+
     document.getElementById("SfreqEM").innerHTML = "Every " + SfreqEM;
     document.getElementById("SincreaseEM").innerHTML = SincreaseEM;
     document.getElementById("SHfreqEM").innerHTML = "Every " + SHfreqEM;
     document.getElementById("SHincreaseEM").innerHTML = SHincreaseEM;
 
-    document.getElementById("MFfreqEP").innerHTML = "Every " + MFfreqEP;
-    document.getElementById("MFincreaseEP").innerHTML = MFincreaseEP;
-    document.getElementById("SfreqEP").innerHTML = "Every " + SfreqEP;
-    document.getElementById("SincreaseEP").innerHTML = SincreaseEP;
-    document.getElementById("SHfreqEP").innerHTML = "Every " + SHfreqEP;
-    document.getElementById("SHincreaseEP").innerHTML = SHincreaseEP;
+    document.getElementById("MFfreqMP").innerHTML = "Every " + MFfreqMP;
+    document.getElementById("MFincreaseMP").innerHTML = MFincreaseMP;
 
-    document.getElementById("MFfreqEA").innerHTML = "Every " + MFfreqEA;
-    document.getElementById("MFincreaseEA").innerHTML = MFincreaseEA;
-    document.getElementById("SfreqEA").innerHTML = "Every " + SfreqEA;
-    document.getElementById("SincreaseEA").innerHTML = SincreaseEA;
-    document.getElementById("SHfreqEA").innerHTML = "Every " + SHfreqEA;
-    document.getElementById("SHincreaseEA").innerHTML = SHincreaseEA;
+    document.getElementById("SfreqMO").innerHTML = "Every " + SfreqMO;
+    document.getElementById("SincreaseMO").innerHTML = SincreaseMO;
+    document.getElementById("SHfreqMO").innerHTML = "Every " + SHfreqMO;
+    document.getElementById("SHincreaseMO").innerHTML = SHincreaseMO;
 
     document.getElementById("MFfreqAP").innerHTML = "Every " + MFfreqAP;
     document.getElementById("MFincreaseAP").innerHTML = MFincreaseAP;
-    document.getElementById("SfreqAP").innerHTML = "Every " + SfreqAP;
-    document.getElementById("SincreaseAP").innerHTML = SincreaseAP;
-    document.getElementById("SHfreqAP").innerHTML = "Every " + SHfreqAP;
-    document.getElementById("SHincreaseAP").innerHTML = SHincreaseAP;
+
+    document.getElementById("SfreqAF").innerHTML = "Every " + SfreqAF;
+    document.getElementById("SincreaseAF").innerHTML = SincreaseAF;
+    document.getElementById("SHfreqAF").innerHTML = "Every " + SHfreqAF;
+    document.getElementById("SHincreaseAF").innerHTML = SHincreaseAF;
 
     document.getElementById("MFfreqEE").innerHTML = "Every " + MFfreqEE;
     document.getElementById("MFincreaseEE").innerHTML = MFincreaseEE;
@@ -129,10 +106,6 @@ function routeFinder (value) {
         
     document.getElementById("MFfreqMD").innerHTML = "Every " + MFfreqMD;
     document.getElementById("MFincreaseMD").innerHTML = MFincreaseMD;
-    document.getElementById("SfreqMD").innerHTML = "Every " + SfreqMD;
-    document.getElementById("SincreaseMD").innerHTML = SincreaseMD;
-    document.getElementById("SHfreqMD").innerHTML = "Every " + SHfreqMD;
-    document.getElementById("SHincreaseMD").innerHTML = SHincreaseMD;
 
     document.getElementById("MFfreqON").innerHTML = "Every " + MFfreqON;
     document.getElementById("MFincreaseON").innerHTML = MFincreaseON;
@@ -146,22 +119,28 @@ function routeFinder (value) {
 
     // Checks if the values are fulfilled to show intended time bubble
 
-    if (MFfreqEM == null || MFincreaseEM == null) {
+    if (SfreqEM == null || SincreaseEM == null) {
         document.getElementById('earlyMorning').style.display = 'none';
     } else {
         document.getElementById('earlyMorning').style.display = '';
     }
 
-    if (MFfreqEP == null || MFincreaseEP == null) {
+    if (MFfreqMP == null || MFincreaseMP == null) {
         document.getElementById('morningPeak').style.display = 'none';
     } else {
         document.getElementById('morningPeak').style.display = '';
     }
 
-    if (MFfreqEA == null || MFincreaseEA == null) {
-        document.getElementById('earlyAfternoon').style.display = 'none';
+    if (SfreqMO == null || SincreaseMO == null) {
+        document.getElementById('Morning').style.display = 'none';
     } else {
-        document.getElementById('earlyAfternoon').style.display = '';
+        document.getElementById('Morning').style.display = '';
+    }
+
+    if (SfreqAF == null || SincreaseAF == null) {
+        document.getElementById('Afternoon').style.display = 'none';
+    } else {
+        document.getElementById('Afternoon').style.display = '';
     }
     
     if (MFfreqAP == null || MFincreaseAP == null) {
@@ -223,24 +202,30 @@ function routeFinder (value) {
 
 // Function to hide bubble elements if no value is selected
 window.onload = function() {
-    var MFfreqEM, MFincreaseEM, MFfreqEP, MFincreaseEP, MFfreqEA, MFincreaseEA,MFfreqAP, MFincreaseAP, MFfreqEP, MFincreaseEP, MFfreqEE, MFincreaseEE, MFfreqLE, MFincreaseLE, MFfreqON, MFincreaseON, MFfreqMD, MFincreaseMD, cuts, rapidTO, routeNotes  = null;
+    var SfreqEM, SincreaseEM, MFfreqMP, MFincreaseMP, SfreqMO, SincreaseMO, SfreqAF, MFfreqAP, MFincreaseAP, MFfreqMP, MFincreaseMP, MFfreqEE, MFincreaseEE, MFfreqLE, MFincreaseLE, MFfreqON, MFincreaseON, MFfreqMD, MFincreaseMD, cuts, rapidTO, routeNotes  = null;
 
-    if (MFfreqEM == null || MFincreaseEM == null) {
+    if (SfreqEM == null || SincreaseEM == null) {
         document.getElementById('earlyMorning').style.display = 'none';
     } else {
         document.getElementById('earlyMorning').style.display = '';
     }
 
-    if (MFfreqEP == null || MFincreaseEP == null) {
+    if (MFfreqMP == null || MFincreaseMP == null) {
         document.getElementById('morningPeak').style.display = 'none';
     } else {
         document.getElementById('morningPeak').style.display = '';
     }
 
-    if (MFfreqEA == null || MFincreaseEA == null) {
-        document.getElementById('earlyAfternoon').style.display = 'none';
+    if (SfreqMO == null || SincreaseMO == null) {
+        document.getElementById('Morning').style.display = 'none';
     } else {
-        document.getElementById('earlyAfternoon').style.display = '';
+        document.getElementById('Morning').style.display = '';
+    }
+
+    if (SfreqAF == null || SincreaseAF == null) {
+        document.getElementById('Afternoon').style.display = 'none';
+    } else {
+        document.getElementById('Afternoon').style.display = '';
     }
     
     if (MFfreqAP == null || MFincreaseAP == null) {
