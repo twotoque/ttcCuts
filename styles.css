@@ -1,8 +1,29 @@
 body {
     font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+.cutBody{
     background-color: #C71C21;
     color: #FFFFFF;
-    margin: 1rem;
+    margin: 0;
+}
+
+.black{
+    color: #212121 !important;
+}
+
+.quoteBody{
+    background-color: #ffa821;
+    color: #212121;
+    margin: 0;
+
+}
+
+.infoBody{
+    background-color: #FFFFFF;
+    color: #212121;
+    margin: 0;
 }
 
 h1 {
@@ -19,6 +40,27 @@ a {
     color: #FFFFFF;
 }
 
+
+.interiorImg{
+    border-radius:4rem;
+}
+
+.TMUquote{
+    text-align: center;
+    font-size: 2.43rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: .7rem;
+}
+
+.TMUquoteCredit{
+    margin:0;
+    margin-bottom: 2rem;
+}
+.TMUbold{
+    font-weight: bolder;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -97,6 +139,23 @@ a {
     margin-bottom: 1rem;
 }
 
+.interiorContainerFlexBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .interiorContainerFlexBody {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 .interiorContainerFlex{
     display: flex;
     align-items: center;
@@ -135,6 +194,9 @@ a {
 .footer{
     padding-top: 5rem;
     text-align: center;
+}
+.text{
+    margin: 2rem;
 }
 .containerRouteMaster {          
     display: grid;  
