@@ -12,6 +12,12 @@ This website has two JavaScript files (i.e. the algorithm that runs the whole we
 
 We will be focusing on `routes.js`. **Volunteering to contribute to data entry does not require prior programming experience.** 
 
+# Prerequisites and template
+
+I strongly recommend downloading an integrated development environment (i.e. a fancy-pants notepad) such as [Visual Studio Code](https://code.visualstudio.com/) or [Replit](https://replit.com/~). If you are using Replit, I recommend setting the language in JavaScript.
+
+I have also made a template for each route over [here](https://github.com/twotoque/ttcCuts/blob/main/TEMPLATE.md)
+
 # How to data entry
 
 I will provide you with a source list of the upcoming cuts. This is usually made by the talented Steve Munro, and for this example, we will be using the [service changes for March 26, 2023](https://stevemunro.ca/2023/02/22/ttc-service-changes-for-march-26-2023-preliminary-version/). 
