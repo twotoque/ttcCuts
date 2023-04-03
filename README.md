@@ -1,3 +1,4 @@
+![alt text](https://raw.githubusercontent.com/twotoque/ttcCuts/main/ArizonaBanner.svg)
 # Welcome to Project Arizona!
 Project Arizona is the codename given to an unnamed website aimed to increase the accessibility and awareness of upcoming cuts to the Toronto Transit Commission. This project, created for (but not exclusively for) the [2023 city budget campaign](https://www.ttcriders.ca/budget2023), allows riders to know how these cuts may impact them. Users can input their specific route and see how long they have to wait due to these changes. Additionally, it connects certain routes to another external campaign (e.g. Line 3 -> Line 3 decommissioning, 35 Jane -> RapidTO project). This uses data from Steve Munro and the Toronto Transit Commission. 
 
