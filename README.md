@@ -72,6 +72,7 @@ This part depends on *what* the information is:
 TTC divides its service schedules based on various times:
 
 ### Mondays - Fridays (starts with MF)
+* **Early morning**, though rarely used and not referred in the official timetable, for the 2023 cuts this term was used for Monday-Friday also. It runs from ** 6AM-8AM** would end in ``EM`` (**E**arly **m**orning)
 * **Morning peak**, only on Mondays-Fridays from **6AM-9AM** would end in ``MP`` (**M**orning **p**eak)
 * **Midday**, only on Mondays-Fridays from **9AM-3PM** would end in ``MD`` (**M**id**d**ay)
 * **Afternoon peak**, only on Mondays-Fridays from **3PM-7PM** would end in ``AP`` (**A**ternoon **p**eak)
@@ -80,7 +81,7 @@ TTC divides its service schedules based on various times:
 * **Overnight**, from **1:30AM-5:30AM** would end in ``ON`` (**O**ver**n**ight)
 
 ### Saturdays and Sundays/Holidays (starts with S or SH respectively) 
-* **Early morning**, only on Saturdays and Sundays/Holidays from** 6AM-8AM** would end in ``EM`` (**E**arly **m**orning)
+* **Early morning**, **USUALLY** only on Saturdays and Sundays/Holidays from** 6AM-8AM** would end in ``EM`` (**E**arly **m**orning)
 * **Morning**, only on Saturdays and Sundays/Holidays from **8AM-12PM** would end in ``MO`` (**Mo**rning)
 * **Afternoon**, only on Saturdays and Sundays/Holidays from **12PM-7PM** would end in ``AF`` (**Af**ternoon)
 * **Early evening**, from **7PM-10PM** would end in ``EE`` (**E**arly **e**vening)
