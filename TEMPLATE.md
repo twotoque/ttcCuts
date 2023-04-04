@@ -8,6 +8,8 @@
     // ---- MORNING ----
 
     //Early Morning (6AM-8AM Saturday/Sunday/Holiday)
+        MFfreqEM: " ", //Monday-Friday early morning
+        MFincreaseEM: " ",
         SfreqEM: " ", //Saturday early morning
         SincreaseEM: " ", 
         SHfreqEM: " ", //Sunday / holiday early morning
